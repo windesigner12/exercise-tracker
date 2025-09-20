@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Exercise Tracker</title></head>
+<body>
+  <h1>Exercise Tracker</h1>
+  <h2>Create User</h2>
+  <form action="/api/users" method="post">
+    <input name="username" placeholder="username" required>
+    <button type="submit">Create</button>
+  </form>
+
+  <h2>Add Exercise</h2>
+  <form action="/api/users/USER_ID/exercises" method="post">
+    <input name="description" placeholder="description" required>
+    <input name="duration" placeholder="duration (minutes)" type="number" required>
+    <input name="date" placeholder="yyyy-mm-dd (optional)" type="date">
+    <button type="submit">Add</button>
+  </form>
+
+  <p>Replace USER_ID above with a real user _id from /api/users</p>
+</body>
+</html>
